@@ -1,14 +1,14 @@
 
 ////////////////////////////////////////////////////////////////////////////////
-// Hai nam chan doi - Personal Project, Snake
-// ----------------------------------------
-// Filename: snk_ffr.sv
+// Personal Project - Simple MCU
+// -----------------------------
+// Filename: spmcu_ffr.sv
 // Author  : Long Nguyen
 // Detail  : [Common] DFF with active-low asynchronous reset
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module snk_ffr#(
+module spmcu_ffr#(
     parameter                DW      = 1 ,
     parameter logic [DW-1:0] RST_VAL = '0
 )(

@@ -1,6 +1,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
-// cTT18 2026-2028 - Personal Project, Snake
+// Personal Project - Simple MCU
 // -----------------------------------------
 // Filename: tb_test.sv
 // Author  : Long Nguyen
