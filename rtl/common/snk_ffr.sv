@@ -1,10 +1,10 @@
 
 ////////////////////////////////////////////////////////////////////////////////
-// 2 nam chan doi - Personal Project, Snake
+// Hai nam chan doi - Personal Project, Snake
 // ----------------------------------------
 // Filename: snk_ffr.sv
 // Author  : Long Nguyen
-// Detail  : DFF with active-low asynchronous reset
+// Detail  : [Common] DFF with active-low asynchronous reset
 //
 ////////////////////////////////////////////////////////////////////////////////
 
