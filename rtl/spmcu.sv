@@ -2,16 +2,21 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Personal Project - Simple MCU
 // -----------------------------
-// Filename: spmcu_ahb_interconnect.sv
+// Filename: spmcu.sv
 // Author  : Long Nguyen
-// Detail  : [AHB Interconnect] Top
-//           - (Rev1.0) inst_spmcu_ahb_rr_arbiter_00
+// Detail  : [Simple MCU] Top
+//           - (Rev1.0) inst_
+//           - (Rev1.0) inst_spmcu_ahb_interconnect_00
+//           - (Rev1.0) inst_
 //
 // Revision: - 1.0_Initial release
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module spmcu_ahb_interconnect#(
+//- Define macros
+`include "spmcu_defines.svh"
+
+module spmcu import spmcu_param_pkg::*;
     parameter 
 )(
     input rstn,
@@ -34,7 +39,7 @@ logic
 
 
 // =============================================================================
-// Round Robin Arbiter
+// AHB Interconnect
 
 assign
 

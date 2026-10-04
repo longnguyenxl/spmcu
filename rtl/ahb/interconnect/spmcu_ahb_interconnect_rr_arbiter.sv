@@ -2,39 +2,44 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Personal Project - Simple MCU
 // -----------------------------
-// Filename: spmcu_ahb_interconnect.sv
+// Filename: spmcu_ahb_interconnect_rr_arbiter.sv
 // Author  : Long Nguyen
-// Detail  : [AHB Interconnect] Top
-//           - (Rev1.0) inst_spmcu_ahb_rr_arbiter_00
-//
+// Detail  : [AHB Interconnect] Round Robin arbiter
 // Revision: - 1.0_Initial release
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module spmcu_ahb_interconnect#(
-    parameter 
+module spmcu_ahb_interconnect_rr_arbiter#(
+    parameter NM = 4
 )(
     input rstn,
     input clk,
     
-    input  logic
-    output logic
+    input  logic [NM-1:0] sor  ,
+    input  logic [NM-1:0] eor  ,
+    output logic [NM-1:0] grant
 );
+
+//- Verify paramter value
+initial begin
+    if(NM < 2) begin
+        $error("Please double check ");
+    end
+end
 
 // =============================================================================
 // Local parameters
 
-localparam 
 
 
 // =============================================================================
 // Internal signals
 
-logic 
+logic [NM-1:0] [NM-1:0] rord; //- Request order
 
 
 // =============================================================================
-// Round Robin Arbiter
+// 
 
 assign
 
