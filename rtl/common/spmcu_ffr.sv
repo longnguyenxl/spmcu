@@ -8,7 +8,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module spmcu_ffr#(
+module spmcu_ffr #(
     parameter                DW      = 1 ,
     parameter logic [DW-1:0] RST_VAL = '0
 )(
@@ -20,7 +20,7 @@ module spmcu_ffr#(
 );
 
 always_ff @(posedge clk or negedge rstn) begin
-    if(~rstn) begin
+    if (~rstn) begin
         Q <= RST_VAL;
     end else begin
         Q <= D;

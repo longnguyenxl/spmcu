@@ -16,9 +16,7 @@
 //- Define macros
 `include "spmcu_defines.svh"
 
-module spmcu import spmcu_param_pkg::*;
-    parameter 
-)(
+module spmcu import spmcu_param_pkg::* (
     input rstn,
     input clk,
     
@@ -41,7 +39,15 @@ logic
 // =============================================================================
 // AHB Interconnect
 
-assign
+`ifdef USE_AHB
+
+spmcu_ahb_interconnect #(
+    
+) inst_spmcu_ahb_interconnect_00 (
+
+);
+
+`endif
 
 
 endmodule
