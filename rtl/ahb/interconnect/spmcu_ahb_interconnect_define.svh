@@ -1,6 +1,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
-// Personal Project - Simple MCU
+// Hiding to study - Simple MCU
 // -----------------------------
 // Filename: spmcu_ahb_interconnect_define.svh
 // Author  : Long Nguyen

@@ -1,6 +1,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
-// Personal Project - Simple MCU
+// Hiding to study - Simple MCU
 // -----------------------------
 // Filename: spmcu_param_pkg.sv
 // Author  : Long Nguyen

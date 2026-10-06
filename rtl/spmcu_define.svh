@@ -1,6 +1,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
-// Personal Project - Simple MCU
+// Hiding to study - Simple MCU
 // -----------------------------
 // Filename: spmcu_define.svh
 // Author  : Long Nguyen
@@ -14,7 +14,7 @@
 `define SPMCU_DEFINE_SVH
 
 // =============================================================================
-// Top
+// Main Bus
 
 `define USE_AHB
 // `define USE_AXI

@@ -1,6 +1,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
-// Personal Project - Simple MCU
+// Hiding to study - Simple MCU
 // -----------------------------
 // Filename: spmcu_ahb_interconnect.sv
 // Author  : Long Nguyen
@@ -12,12 +12,17 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module spmcu_ahb_interconnect #(
-    parameter 
+    parameter NM = 4 ,
+    parameter NS = 4 ,
+    parameter AW = 16,
+    parameter DW = 32
 )(
     input rstn,
     input clk,
     
-    input  logic
+    //- AHB Master side
+    input  logic [NM-1:0] [AW-1:0] haddr_i , 
+    input  logic [NM-1:0] [2:0]    hburst_i, 
     output logic
 );
 

@@ -1,15 +1,16 @@
 
 ////////////////////////////////////////////////////////////////////////////////
-// Personal Project - Simple MCU
+// Hiding to study - Simple MCU
 // -----------------------------
-// Filename: spmcu_ahb_interconnect_rr_arbiter.sv
+// Filename: spmcu_rr_arbiter.sv
 // Author  : Long Nguyen
 // Detail  : [AHB Interconnect] Round Robin arbiter
+//
 // Revision: - 1.0_Initial release
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module spmcu_ahb_interconnect_rr_arbiter#(
+module spmcu_rr_arbiter#(
     parameter NM = 4
 )(
     input rstn,
@@ -19,13 +20,6 @@ module spmcu_ahb_interconnect_rr_arbiter#(
     input  logic [NM-1:0] eor  ,
     output logic [NM-1:0] grant
 );
-
-//- Verify paramter value
-initial begin
-    if(NM < 2) begin
-        $error("Please double check ");
-    end
-end
 
 // =============================================================================
 // Local parameters
